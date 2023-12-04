@@ -51,14 +51,14 @@ function App() {
         <div className="flex gap-1 w-full justify-between flex-col sm:flex-row">
           <input
             className="rounded p-2"
-            type="text"
+            type="number"
             name="rawFood"
             placeholder="comida cozida"
             onChange={(e) => setCookedFoodQuantity(e.target.value)}
           />
           <input
             className="rounded p-2"
-            type="text"
+            type="number"
             name="cookedFood"
             placeholder="comida crua"
             readOnly
