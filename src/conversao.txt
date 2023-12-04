@@ -1,0 +1,5 @@
+Carnes - Bovinos, suínos é aves fazer a quantidade crua multiplicado por 1.35 -> 150 * 1.35
+Arroz - 100g de arroz cru equivale a aproximadamente 260g de arroz cozido
+Batatas:
+  150g de batata (prontas) congelada rende 75g frita da air fryer
+  150 de batatas in natura rende 105g frita na air fryer
