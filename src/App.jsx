@@ -69,7 +69,7 @@ function App() {
           Calcular
         </button>
       </form>
-      <p className="text-white text-center">{selected}</p>
+      <p className="text-white text-center">Obs: Todos os valores são aproximados.</p>
     </div>
   );
 }
