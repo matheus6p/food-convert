@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import { foods } from "./mock";
 import "./App.css";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
 
 function App() {
   const initialStateSelected = foods.find((food) => food.id === 1).foodName;
@@ -29,15 +30,16 @@ function App() {
 
   return (
     <div className="custom-container">
+      <ThemeSwitcher />
       <form action="" onSubmit={submit} className="">
-        <h1 className="text-3xl font-bold text-slate-50 text-center m-4">
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-50 text-center m-4">
           Food Convert
         </h1>
         <select
           name="food"
           id="food"
           value={selected}
-          className="rounded p-2"
+          className="rounded p-2 border border-zinc-200"
           onChange={handleSelectChange}
         >
           {foods.map((food) => {
@@ -50,14 +52,14 @@ function App() {
         </select>
         <div className="flex gap-1 w-full justify-between flex-col sm:flex-row">
           <input
-            className="rounded p-2"
+            className="rounded p-2 border border-zinc-200"
             type="number"
             name="rawFood"
             placeholder="comida cozida"
             onChange={(e) => setCookedFoodQuantity(e.target.value)}
           />
           <input
-            className="rounded p-2"
+            className="rounded p-2 border border-zinc-200"
             type="number"
             name="cookedFood"
             placeholder="comida crua"
@@ -68,7 +70,7 @@ function App() {
         <button className="rounded p-2 text-slate-50 bg-green-600">
           Calcular
         </button>
-        <p className="text-white m-4 text-center">
+        <p className="text-slate-900 dark:text-white m-4 text-center">
           Obs: Todos os valores são aproximados.
         </p>
       </form>
